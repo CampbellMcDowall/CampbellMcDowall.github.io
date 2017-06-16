@@ -15,9 +15,9 @@ title: Project One
 				Meaning at least one gateway that connects to a backend server such as the Internet Of Things or Lora server.		
 				
 				<br><br>
-				At first we were looking at getting up to 5 gateways; three of which would cover parts of dunedin, one would be for a future deployment and the last would be for in house development.
+				At first we were looking at getting up to 5 gateways; three of which would cover parts of Dunedin, one would be for a future deployment and the last would be for in house development.
 				We soon realised that it was not going to be cheap to implement a solution that would work and cover the range we required.  We looked at the previous teams work and decided that we would
-				need to start from scratch due to the many problems they were having with hardware incompatibilitys etc.
+				need to start from scratch due to the many problems they were having with hardware incompatibilities etc.
 				<br><br>
 				
 				
@@ -30,16 +30,16 @@ title: Project One
 			<p>
 				For the first few weeks The team worked together to look through the previous teams work and see if we could salvage any of it,
 				we soon decided that it was going to save more time if we re-evaluated the whole project and started from the beginning.
-				We spent a solid amount of time researching new gateways that had became available and also solutions that also where not available
+				We spent a large amount of time researching new gateways that had become available and also solutions that also were not available
 				options for the previous team.
 				<br><br>
 				I assisted in contacting various companies for information and prices of their gateways, finding a suitable gateway at a reasonable price was 
 				difficult but many companies where interested in our project.  The main problem we had with choosing a gateway was finding one that we could use legally in New Zealand,
 				after research and talking to some interested parties we knew we had to be ideally between 915 and 925mhz.<br> 
-				Finding a gateway that allowed for these frequencies was difficult because the regulations where updated 28 January 2016 many manufacturers havent yet made a firmware update for their gateways. 
-				Kotahi an existing paid LoRaWAN sevice in New Zealand explain on their <a href="https://kotahi.net/radio-frequencies-bands-and-inspections/">website</a> about why they are using the 800mhz band,
+				Finding a gateway that allowed for these frequencies was difficult because the regulations where updated 28 January 2016 many manufacturers haven’t yet made a firmware update for their gateways. 
+				Kotahi an existing paid LoRaWAN service in New Zealand explain on their <a href="https://kotahi.net/radio-frequencies-bands-and-inspections/">website</a> about why they are using the 800mhz band,
 				we are lucky that the Multitech conduit has firmware suited for the higher 915-925mhz band that is also available for use.<br>
-				More information available at <a href="https://gazette.govt.nz/notice/id/2017-go415">Radiocommunications Regulations 2017</a> and also <a href="https://www.rsm.govt.nz/consumers/frequencies-anyone-can-use">Frequencies anyone can use.</a> 
+				More information available at <a href="https://gazette.govt.nz/notice/id/2017-go415">Radio Communications Regulations 2017</a> and also <a href="https://www.rsm.govt.nz/consumers/frequencies-anyone-can-use">Frequencies anyone can use.</a> 
 			</p>
 			<br>
 			<p>
@@ -48,9 +48,9 @@ title: Project One
 				Implementation of the gateways would potentially involve waterproofing, lightning protection, installation of the gateway on top of a building or other high structure.  
 				For the installation it was likely that a professional would have to install it and permission would need to be granted.
 				<br><br>
-				The first gateway we purchased from Haxiot and unfortunatly it did not meet our expectations or as expected, code that was provided did not work properly and required the team to look
-				at and reconfigure the code to run.  It was not a good start tothe project and dampened spirits slightly.  Now we have a Multitech Conduit which I think is a good solution by Multitech 
-				that will work great for our situation, it wasnt the most expensive option which will allow us to get more gateways 
+				The first gateway we purchased from Haxiot and unfortunately it did not meet our expectations or as expected, code that was provided did not work properly and required the team to look
+				at and reconfigure the code to run.  It was not a good start to the project and dampened spirits slightly.  Now we have a Multitech Conduit which I think is a good solution by Multitech 
+				that will work great for our situation, it wasn’t the most expensive option which will allow us to get more gateways 
 				when required.  The gateway has a setting for New Zealand frequencies, it is more of an industrial solution than the Haxiot gateway and Multitech offer great support.
 			</p>
 			<div class="tasks">
@@ -64,10 +64,10 @@ title: Project One
 					The data is collected at intervals then stored in a csv file on the micro sd card.  
 					We divided up the sensors then set off to build smaller example circuits for each or we used the available online documentation.  
 					<br>My main task was to join the various sensors together into one project (the final version).  Originally we used an Arduino Uno which I quickly realised was not going to be big enough. 
-					The arduino Uno ran out of memory very quickly after we added the micro sd card breakout board and lux sensor.  Though we tried to make the project take less space and after half a week we swapped the Uno’s for Mega’s.  
+					The Arduino Uno ran out of memory very quickly after we added the micro sd card breakout board and lux sensor.  Though we tried to make the project take less space and after half a week we swapped the Uno’s for Mega’s.  
 					With more memory there was no issue writing to the micro SD card file.<br><br>
-					Creating the room sensor generally went quite well with the main issues coming from running out of ram and flash memory on the Uno,
-					combining the 
+					Creating the room sensor generally went quite well with the main issues coming from running out of ram and flash memory on the Uno and
+					combining the individual smaller programs into a unified program.
 					More information on the <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/tree/gh-pages/development/roomSensor/megaSensor">Room sensor project</a>
 				</p>
 				<h3>Use case essay</h3>
@@ -75,23 +75,22 @@ title: Project One
 					One of our tasks was to choose a LoRaWAN use case and produce an essay about the subject.
 					I chose Amsterdam and their use of The Things Network LoRaWAN, focusing on current uses and also concerns involved with the technology.
 					Amsterdam is where <a href="https://www.thethingsnetwork.org/">The Things Network</a> started and is mostly developed from, they also currently have some interesting and unique use cases.
-					While researching for this essay it was not very easy to find reliable information on the LoRaWAN networks, many articles and eduational journals are copyied and tweaked versions of eachother.
-					This ment there are a lot of lnks but not with a lot of useful information.  Due to the LoRaWAN protocol being relatively young it is always changing and evolving with how people use it, teh standard is
+					While researching for this essay it was not very easy to find reliable information on the LoRaWAN networks, many articles and educational journals are copied and tweaked versions of each other.
+					This meant there are a lot of links but not with a lot of useful information.  Due to the LoRaWAN protocol being relatively young it is always changing and evolving with how people use it, the standard is
 					not fully defined so it has allowed some manufacturers to put their own take on how it should be best implemented.  This is good for innovation but can be difficult when you want solid information about setting up the best possible network.
 					To view my essay on Amsterdam and The Things Network <a href="https://drive.google.com/open?id=0B8TRH0GOFhaDN3RkNW9ibjBBaHM>click here.</a>
 
 				</p>
 				<h3>Things Network Server - Research and Install</h3>
 				<p>
-
 					The process of installing The Things Network server was not easy.  The code was being regularly updated, there where a lot of dependencies required that each have their own
 					install guides, 
 					This is the <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/tree/gh-pages/development/servers/TTNserver/README.md">basic TTN install guide</a>
 					<br>
 					By following this guide I got most of the server configured and installed on a dedicated server.  While installing the server it seemed as every dependency failed to install how they explained it and required me to search
-					forums to get the information required.  An example being installing RabbitMQ, there is no explaination apart from "Make sure you have Redis and RabbitMQ installed and running.  On a fresh installation you might need to install the MQTT plugin for RabbitMQ."
+					forums to get the information required.  An example being installing RabbitMQ, there is no explanation apart from "Make sure you have Redis and RabbitMQ installed and running.  On a fresh installation you might need to install the MQTT plugin for RabbitMQ."
 					You then follow their documentation on how to install it <a href="https://www.rabbitmq.com/install-windows.html">on rabbitmq.com</a><br>
-					The TTN guide hen explains you need to use the <a href="http://www.rabbitmq.com/management.html">management plugin.</a><br><br>
+					The TTN guide then explains you need to use the <a href="http://www.rabbitmq.com/management.html">management plugin.</a><br><br>
 					I found ensuring your development environment was setup correctly was the hardest part of installing the server due to how many different variables you needed to configure correctly with no documentation on what was required.
 						
 					<br>It was not the best way to install The Things Network server.  After the first attempt of installing the server didn't completely work we decided to do it as a team,
@@ -114,18 +113,18 @@ title: Project One
 				</p>
 				<h3>Other tasks</h3>
 				<p>
-					After the team having mixed results with the Haxiot gateway, I decided to do some further research an to reach out to Haxiot.
+					After the team having mixed results with the Haxiot gateway, I decided to do some further research and reaching out to Haxiot.
 					From this I learnt the following "The Gateway to the NS uses SSL to connect. You will need port 443/TCP open from your virtual Gateway to the Network Server. 
 					You will need to use the IP address for either us1.loriot.io or au1.loriot.io, depending on the server you have setup on your system."
 					After checking with the Technician Rob I found that this shouldn’t be any problem as the ports are open. 
-					I then proceeded to exactly follow the haxiot instructions and also try a few different virtual machine that they offered,
+					I then proceeded to exactly follow the Haxiot instructions and also try a few different virtual machine that they offered,
 					After suspecting that something on the Polytech network was blocking the gateway from connecting to the Loriot service I was testing with.
 					I attempted to use a VPN to another country, this allowed me to bypass any restrictions the gateway have been facing, the gateway finally connected 
 					but was too slow to be used due to the connection being very slow.  
 					<br>
-					Oscar and myself started to set up the Multitech Conduit when it arrived, we connected directly to the gateway to confgure it for New Zealand frequencies,
+					Oscar and myself started to set up the Multitech Conduit when it arrived, we connected directly to the gateway to configure it for New Zealand frequencies,
 					Because unfortunatly it seems as something on the polytech network was blocking the gateway from connecting over the local network.
-					As the new semester starts we will get this gateway to connect to the server over the network and get data from the server using a mosquitto subscription.
+					As the new semester starts we will get this gateway to connect to the server over the network and get data from the server using a Mosquitto subscription.
 					We plan to build a few example nodes and have guides/tutorials available for community users to easily follow to make their own nodes.
 				</p>
 			</div>
