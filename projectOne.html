@@ -11,17 +11,13 @@ title: Project One
 			<h2>The plan</h2>
 			<p>
 				This semister we were aiming to have a working LoRaWAN network in Dunedin, New Zealand.
-				Meaning at least one gateway that connects to a backend server such as the Internet Of Things or Lora server.
-				
-				
+				Meaning at least one gateway that connects to a backend server such as the Internet Of Things or Lora server.		
 				
 				<br><br>
 				At first we were looking at getting up to 5 gateways; three of which would cover parts of dunedin, one would be for a future deployment and the last would be for in house development.
 				We soon realised that it was not going to be cheap to implement a solution that would work and cover the range we required.  We looked at the previous teams work and decided that we would
 				need to start from scratch due to the many problems they were having with hardware incompatibilitys etc.
 				<br>
-				
-			
 			</p>
 		</div>
 
@@ -46,69 +42,70 @@ title: Project One
 
 				
 			</p>
-		</div>
-		<div class="tasks">
-			<h2>Tasks</h2>
-			<h3>Room sensor</h3>
-			<p>
+		
+			<div class="tasks">
+				<h2>Tasks</h2>
+				<h3>Room sensor</h3>
+				<p>
 
-				Brendan and myself were given a task to make a room sensor which we would build based off a schematic given to us, we researched the parts and purchased them or best alternative.  
-				As the project specification changed we had to adapt the sensor and project.  Sensors used in the most current version include temperature, humidity, light (lux), sound and motion.  
-				The data is collected at intervals then stored in a csv file on the micro sd card.  
-				We divided up the sensors then set off to build smaller example circuits for each or we used the available online documentation.  
-				My main task was to join the various sensors together into one project (the final version).  Originally we used an Arduino Uno which I quickly realised was not going to be big enough. 
-				The arduino Uno ran out of memory very quickly after we added the micro sd card breakout board and lux sensor.  Though we tried to make the project take less space and after half a week we swapped the Uno’s for Mega’s.  
-				With more memory there was no issue writing to the micro SD card file.<br>
-				More information on the <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/tree/gh-pages/development/roomSensor/megaSensor">Room sensor project</a>
-			</p>
-			<h3>Use case essay</h3>
-			<p>
+					Brendan and myself were given a task to make a room sensor which we would build based off a schematic given to us, we researched the parts and purchased them or best alternative.  
+					As the project specification changed we had to adapt the sensor and project.  Sensors used in the most current version include temperature, humidity, light (lux), sound and motion.  
+					The data is collected at intervals then stored in a csv file on the micro sd card.  
+					We divided up the sensors then set off to build smaller example circuits for each or we used the available online documentation.  
+					My main task was to join the various sensors together into one project (the final version).  Originally we used an Arduino Uno which I quickly realised was not going to be big enough. 
+					The arduino Uno ran out of memory very quickly after we added the micro sd card breakout board and lux sensor.  Though we tried to make the project take less space and after half a week we swapped the Uno’s for Mega’s.  
+					With more memory there was no issue writing to the micro SD card file.<br>
+					More information on the <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/tree/gh-pages/development/roomSensor/megaSensor">Room sensor project</a>
+				</p>
+				<h3>Use case essay</h3>
+				<p>
 
 
-				To view my use case please click here
-				
-				
-			</p>
-			<h3>Things Network Server - Research and Install</h3>
-			<p>
-				
-				The process of installing The Things Network server was not easy.  The code was being regularly updated, there where a lot of dependencies required that each have their own
-				install guides, 
-				This is the <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/tree/gh-pages/development/servers/TTNserver/README.md">basic TTN install guide</a>
-				<br>
-				It was not the best way to learn about The Things Network stack
-				
-			</p>
-			<h3>Getting data from the server</h3>
-			<p>
-				
-				
-			</p>
-			<h3>Documentation</h3>
-			<p>
-				
-				 
-				<a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/research/gateway/README.md">Gateway research</a>
-				How to <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/research/accessingServerData/README.md">Access server data</a>
-				
-				
-			</p>
-			<h3>Other tasks</h3>
-			<p>
-				After the team having mixed results with the Haxiot gateway, I decided to do some further research an to reach out to Haxiot.
-				From this I learnt the following "The Gateway to the NS uses SSL to connect. You will need port 443/TCP open from your virtual Gateway to the Network Server. 
-				You will need to use the IP address for either us1.loriot.io or au1.loriot.io, depending on the server you have setup on your system."
-				After checking with the Technician Rob I found that this shouldn’t be any problem as the ports are open. 
-				I then proceeded to exactly follow the haxiot instructions and also try a few different virtual machine that they offered,
-				After suspecting that something on the Polytech network was blocking the gateway from connecting to the Loriot service I was testing with.
-				I attempted to use a VPN to another country, this allowed me to bypass any restrictions the gateway have been facing, the gateway finally connected 
-				but was too slow to be used due to the connection being very slow.  
-				<br>
-				Oscar and myself started to set up the Multitech Conduit when it arrived, we connected directly to the gateway to confgure it for New Zealand frequencies,
-				Because unfortunatly it seems as something on the polytech network was blocking the gateway from connecting over the local network.
-				As the new semester starts we will get this gateway to connect to the server over the network and get data from the server using a mosquitto subscription.
-				We plan to build a few example nodes and have guides/tutorials available for community users to easily follow to make their own nodes.
-			</p>
+					To view my use case please click here
+
+
+				</p>
+				<h3>Things Network Server - Research and Install</h3>
+				<p>
+
+					The process of installing The Things Network server was not easy.  The code was being regularly updated, there where a lot of dependencies required that each have their own
+					install guides, 
+					This is the <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/tree/gh-pages/development/servers/TTNserver/README.md">basic TTN install guide</a>
+					<br>
+					It was not the best way to learn about The Things Network stack
+
+				</p>
+				<h3>Getting data from the server</h3>
+				<p>
+
+
+				</p>
+				<h3>Documentation</h3>
+				<p>
+
+
+					<a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/research/gateway/README.md">Gateway research</a>
+					How to <a href="https://github.com/OtagoPolytechnic/ThingsNetworkDunedin/blob/gh-pages/research/accessingServerData/README.md">Access server data</a>
+
+
+				</p>
+				<h3>Other tasks</h3>
+				<p>
+					After the team having mixed results with the Haxiot gateway, I decided to do some further research an to reach out to Haxiot.
+					From this I learnt the following "The Gateway to the NS uses SSL to connect. You will need port 443/TCP open from your virtual Gateway to the Network Server. 
+					You will need to use the IP address for either us1.loriot.io or au1.loriot.io, depending on the server you have setup on your system."
+					After checking with the Technician Rob I found that this shouldn’t be any problem as the ports are open. 
+					I then proceeded to exactly follow the haxiot instructions and also try a few different virtual machine that they offered,
+					After suspecting that something on the Polytech network was blocking the gateway from connecting to the Loriot service I was testing with.
+					I attempted to use a VPN to another country, this allowed me to bypass any restrictions the gateway have been facing, the gateway finally connected 
+					but was too slow to be used due to the connection being very slow.  
+					<br>
+					Oscar and myself started to set up the Multitech Conduit when it arrived, we connected directly to the gateway to confgure it for New Zealand frequencies,
+					Because unfortunatly it seems as something on the polytech network was blocking the gateway from connecting over the local network.
+					As the new semester starts we will get this gateway to connect to the server over the network and get data from the server using a mosquitto subscription.
+					We plan to build a few example nodes and have guides/tutorials available for community users to easily follow to make their own nodes.
+				</p>
+			</div>
 		</div>
 
 
