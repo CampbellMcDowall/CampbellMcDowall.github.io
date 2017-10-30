@@ -3,6 +3,8 @@ layout: default
 title: Campbell McDowall's Github Portfolio
 ---
 
+
+
 		<div class="about">
 			<h2>Campbell McDowall!</h2>
 			<p>	I am completing my degree in the Bachelor of Information Technology with Otago Polytechnic. 
@@ -13,4 +15,20 @@ title: Campbell McDowall's Github Portfolio
 			
 			</p>
 		</div>
+
+
+<script src="raphael.2.1.0.min.js"></script>
+<script src="justgage.1.0.1.min.js"></script>
+
+<div id="gauge" class="200x160px"></div>
+
+<script>
+  var g = new JustGage({
+    id: "gauge",
+    value: 67,
+    min: 0,
+    max: 100,
+    title: "Visitors"
+  });
+</script>
 
