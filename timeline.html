@@ -6,81 +6,20 @@ title: TimeLine
 <div class="blurb">
 	<h1>Timeline</h1>
 	
-	<div id="accordion" role="tablist" aria-multiselectable="true">
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingOne">
-	      <h5 class="mb-0">
-		<a data-toggle="collapse" data-parent="#accordion" href="#weekOne" aria-expanded="true" aria-controls="collapseOne">
-		  Week One
-		</a>
-	      </h5>
-	    </div>
-
-	    <div id="weekOne" class="collapse show" role="tabpanel" aria-labelledby="Week One">
-	      <div class="card-block">
-		<h3>Tasks complete/in progress</h3>
-		<p>Set up the Multitech Conduit at home, this way it would be able to be configured off of the Otago Polytechnics network.  Previously the network had proved troublesome with various equipment and the first test of the gateway at Polytech.
-			As I set it up I also started documentation/rough notes.</p>
-		<h3>Issues/Challenges</h3>
-		<p>At first there were a few issues with the devices set up, these mainly were due to lack of up to date concrete documentation.
-			I needed to change my IP subnet to access the device for the first time.</p>  
-		</div>
-	    </div>
-	  </div>
-		
-		
-		
-		
-		
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingTwo">
-	      <h5 class="mb-0">
-		<a data-toggle="collapse" data-parent="#accordion" href="#weekTwo" aria-expanded="true" aria-controls="collapseTwo">
-		  Week Two
-		</a>
-	      </h5>
-	    </div>
-
-	    <div id="weekTwo" class="collapse show" role="tabpanel" aria-labelledby="Week Two">
-	      <div class="card-block">
-		      <h3>Tasks complete/in progress</h3>
-		      <p>After the first week of trying to set up the gateway I continued to try get it to work correctly, this took a number of factory resets and a bit of trial and error to get the device to behave correctly.
-			I then worked on getting Node-RED working and the flow for connecting the Multitech mDot Box to the gateway.</p>
-		      <h3>Issues/Challenges</h3>
-		      <p>Found out that the mDot Box was setup for US frequencies by default and ended up spending a while writing emails to the 
-			 technical support about how to change the mDot Box firmware to the correct AU915 frequency
-		      </p> 
-	      </div>
-	    </div>
-	  </div>
-		
-		
-		
-	<div class="card">
-	    <div class="card-header" role="tab" id="headingThree">
-	      <h5 class="mb-0">
-		<a data-toggle="collapse" data-parent="#accordion" href="#weekThree" aria-expanded="true" aria-controls="collapseThree">
-		  Week Three
-		</a>
-	      </h5>
-	    </div>
-
-	    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
-	      <div class="card-block">
-		      <h3>Tasks complete/in progress</h3>
-		      <p>At the end of week 2 I received some firmware and instructions from the technical support team, I spent the first part of the week learning how to use the USB Micro Development board and the AT commands to communicate with the device.
-			Continued with documentation.
-			Nearing the end of the week I received updated firmware and instructions to change the firmware. Over the weekend and the Monday of week 4 I finally got the firmware changed on the mDot Box.  
-		      </p>
-		      <h3>Issues/Challenges</h3>
-		      <p>Unfortunately the first lot of firmware and instructions were not suitable for changing the mDot Box firmware.
-			The process was a bit confusing due to their being so many firmware versions available and they needed to be installed in a specific order and the mDot needed to use a specific version before I could change the frequency. 
-			Changing the firmware and frequencies seemed to have worked, although there is sometimes an error in the serial command.  I believe it wasn’t a necessary bug to be fixed as it was to do with their firmware. 
-		      </p> 
-	      </div>
-	    </div>
-	  </div>
-</div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge info"><i class="fa fa-smile-o"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Title</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Description...</p>
+            </div>
+          </div>
+        </li>
+	    
+    </ul>
 		
 		
 		
