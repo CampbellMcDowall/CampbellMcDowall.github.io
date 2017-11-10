@@ -27,7 +27,7 @@ title: TimeLine
 			<td>Set up the Multitech Conduit at home, this way it would be able to be configured off of the Otago Polytechnics network.  Previously the network had proved troublesome with various equipment and the first test of the gateway at Polytech.
 				As I set it up I also started documentation/rough notes.</td>
 			<td>At first there were a few issues with the devices set up, these mainly were due to lack of up to date concrete documentation.
-				I needed to change my IP subnet to access the device for the first time.
+				<br>I needed to change my IP subnet to access the device for the first time.
 			</td>
 		      </tr>
 		    </tbody>
@@ -53,7 +53,7 @@ title: TimeLine
 		    <tbody>
 		      <tr>
 			<td>After the first week of trying to set up the gateway I continued to try get it to work correctly, this took a number of factory resets and a bit of trial and error to get the device to behave correctly.
-				I then worked on getting Node-RED working and the flow for connecting the Multitech mDot Box to the gateway.</td>
+				<br>I then worked on getting Node-RED working and the flow for connecting the Multitech mDot Box to the gateway.</td>
 			<td>Found out that the mDot Box was setup for US frequencies by default and ended up spending a while writing emails to the technical support about how to change the mDot Box firmware to the correct AU915 frequency</td>
 		      </tr>
 		    </tbody>
@@ -79,11 +79,11 @@ title: TimeLine
 		    <tbody>
 		      <tr>
 			<td>At the end of week 2 I received some firmware and instructions from the technical support team, I spent the first part of the week learning how to use the USB Micro Development board and the AT commands to communicate with the device.
-				Nearing the end of the week I received updated firmware and instructions to change the firmware. Over the weekend and the Monday of week 4 I finally got the firmware changed on the mDot Box.
+				<br>Nearing the end of the week I received updated firmware and instructions to change the firmware. Over the weekend and the Monday of week 4 I finally got the firmware changed on the mDot Box.
 			      <br>Continued with documentation.</td>
 			<td>Unfortunately the first lot of firmware and instructions were not suitable for changing the mDot Box firmware.
-				The process was a bit confusing due to their being so many firmware versions available and they needed to be installed in a specific order and the mDot needed to use a specific version before I could change the frequency. 
-				Changing the firmware and frequencies seemed to have worked, although there is sometimes an error in the serial command.  I believe it wasn’t a necessary bug to be fixed as it was to do with their firmware. /td>
+				<br>The process was a bit confusing due to their being so many firmware versions available and they needed to be installed in a specific order and the mDot needed to use a specific version before I could change the frequency. 
+				<br>Changing the firmware and frequencies seemed to have worked, although there is sometimes an error in the serial command.  I believe it wasn’t a necessary bug to be fixed as it was to do with their firmware. /td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -108,8 +108,8 @@ title: TimeLine
 		    <tbody>
 		      <tr>
 			<td>Change the mDot Box frequency and successfully connected to the Multitech Conduit gateway.
-				Documented how to do the above change.  Updated Trello etc.<br>
-				This week was a bit of a tidy up week after getting the gateway working at home, started looking at getting it working at Otago Polytech in D block.</td>
+				Documented how to do the above change.  Updated Trello etc.
+				<br>This week was a bit of a tidy up week after getting the gateway working at home, started looking at getting it working at Otago Polytech in D block.</td>
 			<td>Static IP address needed for the gateway.</td>
 		      </tr>
 		    </tbody>
@@ -220,7 +220,8 @@ title: TimeLine
 			<td>Management of tasks to be completed before the Conduit gateway can be deployed.
 				AWS server is running and is getting configured for the LoRa server.
 				<br>Discuss with engineering school the requirements for the gateway enclosures, discussing the design and requirements.
-				Sorting enclosures/start building enclosures,  After getting the gateways I needed to strip one down to see what I was working with and if they were a suitable fit.  This involved removing all of the screws, bolts and Wi-Fi components so I was left with a shell and the cooling unit.  I am planning on being able to use the Peltier as the m-cards can get quite hot, which I suspect will only get worse once the enclosure has no airflow as it needs to be waterproof. 
+				<br>Sorting enclosures/start building enclosures,  After getting the gateways I needed to strip one down to see what I was working with and if they were a suitable fit.  
+				<br>This involved removing all of the screws, bolts and Wi-Fi components so I was left with a shell and the cooling unit.  I am planning on being able to use the Peltier as the m-cards can get quite hot, which I suspect will only get worse once the enclosure has no airflow as it needs to be waterproof. 
 				<br>The purchase orders were submitted this week. </td>
 			<td>There is a problem with not all of the ports we require being open on the AWS server yet.  This will hopefully be resolved soon when we get a list of ports that we require to be open to the platform team.</td>
 		      </tr>
@@ -277,7 +278,7 @@ title: TimeLine
 				<br>Worked with Brendan to try get the Conduit gateway to talk to the AWS server.  
 				<br>Found that port 1700 was being blocked on the Otago Polytechnic network,  this was then unblocked the next week and the devices were able to connect to the AWS server.</td>
 			<td>No luck connecting the Conduit to the AWS server, we changed the gateway config file and exhausted debugging options available. 
-				We are suspecting a port is being blocked, most likely port 1700.  This was later confirmed by Rob.</td>
+				<br>We are suspecting a port is being blocked, most likely port 1700.  This was later confirmed by Rob.</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -304,7 +305,7 @@ title: TimeLine
 			<td>Met with Linus Turner (DGT Lecturer) from Kavanagh college and discussed deploying a gateway at the school.  As well as looking at getting students involved with making nodes etc.  They are really interested and would like me to send them an email containing requirements, brief description and any other useful information.
 				<br>As of Wednesday I am getting Tom to proof read the second iteration of the development to production form to be sent to Steven Turnbull as soon as possible.</td>
 			<td>Started to look at power solutions for the conduit
-				http://www.multitech.net/developer/products/multiconnect-conduit-platform/conduit/mtcdt-power-draw/</td>
+				<br>http://www.multitech.net/developer/products/multiconnect-conduit-platform/conduit/mtcdt-power-draw/</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -481,7 +482,7 @@ title: TimeLine
 				<br>Group discussion around last minute website modifications 
 
 				<br>Over the last week I will continue to contact stakeholders and pass them onto Tom to manage, I will order the last parts required for the two raspberry pi gateways and organise the install at Kavanagh College.
-				I would also like to finish the Draguino/Arduino version of the GPS mapper, this would give another option for testing and show the range of the Draguino as well as the mDots.</td>
+				<br>I would also like to finish the Draguino/Arduino version of the GPS mapper, this would give another option for testing and show the range of the Draguino as well as the mDots.</td>
 			<td>Getting everything done!</td>
 		      </tr>
 		    </tbody>
