@@ -105,3 +105,6 @@
 .timeline-badge.info {
   background-color: #5bc0de !important;
 }
+.table td{
+  width: 60%;
+}
