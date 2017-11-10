@@ -52,8 +52,9 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>After the first week of trying to set up the gateway I continued to try get it to work correctly, this took a number of factory resets and a bit of trial and error to get the device to behave correctly.
+				I then worked on getting Node-RED working and the flow for connecting the Multitech mDot Box to the gateway.</td>
+			<td>Found out that the mDot Box was setup for US frequencies by default and ended up spending a while writing emails to the technical support about how to change the mDot Box firmware to the correct AU915 frequency</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -77,8 +78,12 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>At the end of week 2 I received some firmware and instructions from the technical support team, I spent the first part of the week learning how to use the USB Micro Development board and the AT commands to communicate with the device.
+				Continued with documentation.
+				Nearing the end of the week I received updated firmware and instructions to change the firmware. Over the weekend and the Monday of week 4 I finally got the firmware changed on the mDot Box.  </td>
+			<td>Unfortunately the first lot of firmware and instructions were not suitable for changing the mDot Box firmware.
+				The process was a bit confusing due to their being so many firmware versions available and they needed to be installed in a specific order and the mDot needed to use a specific version before I could change the frequency. 
+				Changing the firmware and frequencies seemed to have worked, although there is sometimes an error in the serial command.  I believe it wasn’t a necessary bug to be fixed as it was to do with their firmware. /td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -102,8 +107,10 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Change the mDot Box frequency and successfully connected to the Multitech Conduit gateway.
+				Documented how to do the above change.  Updated Trello etc.
+				This week was a bit of a tidy up week after getting the gateway working at home, started looking at getting it working at Otago Polytech in D block.</td>
+			<td>Static IP address needed for the gateway.</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -127,8 +134,10 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Met with the Platform group to discuss deploying our server on AWS (Amazon Web Services), they said they will get back to me after they can get access to AWS and can discuss further requirements.
+				Once they got permission we started to look at migrating the local server to AWS, planning on converting it to a virtual machine if possible.</td>
+			<td>Getting an AWS server and ports open.
+				Convert the server to a virtual image.</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -152,8 +161,9 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Decided to install the LoRa server from scratch as the BIT project team were not able to find a quick solution to convert our running LoRa server.
+				Looked at domain name options, discussed with rob and decided that instead of purchasing we can use a subdomain of Otago Polytechnic.</td>
+			<td>Choosing domain name, still finding ports need to be opened.</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -177,8 +187,15 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Meeting with Steven Turnbull to discuss the Multitech Conduit gateway deployment.  This included getting permission to install a gateway on the roof of H block and discussion around node ideas to make the technology useful.  We are required to fill in a development to production form which can be handed to contractors so they understand what they are doing.
+
+				Obtained suitable enclosures, these enclosures I found while helping to clean out a store room.   They are old unused outdoor wireless access points that actually already have mounting hardware for mounting them on a pole.
+
+				I also started a list of parts that are necessary to get these gateways deployed, all group members could submit parts or devices that they would like or that we need then I collated them into a list which I took to Rob which we had to modify to fit within budget but still meet our needs.
+
+				While organising this list we also needed to look for suitable antennas, myself and Brendan decided that the solutions offered by Elecomes would suit our applications best.
+				(Looking for a suitable antenna, helpful information:  http://www.tp-link.com/us/FAQ-3.html).</td>
+			<td>When choosing outdoor antennas it can be very difficult to decide what solution will work best with our gateways and not cost too much (antennas get expensive)  http://www.multitech.net/developer/products/multiconnect-conduit-platform/conduit/max-radio-frequency-power-for-conduit/</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -202,8 +219,14 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Management of tasks to be completed before the Conduit gateway can be deployed.
+				AWS server is running and is getting configured for the LoRa server.
+
+				Discuss with engineering school the requirements for the gateway enclosures, discussing the design and requirements.
+				Sorting enclosures/start building enclosures,  After getting the gateways I needed to strip one down to see what I was working with and if they were a suitable fit.  This involved removing all of the screws, bolts and Wi-Fi components so I was left with a shell and the cooling unit.  I am planning on being able to use the Peltier as the m-cards can get quite hot, which I suspect will only get worse once the enclosure has no airflow as it needs to be waterproof. 
+
+				The purchase orders were submitted this week. </td>
+			<td>There is a problem with not all of the ports we require being open on the AWS server yet.  This will hopefully be resolved soon when we get a list of ports that we require to be open to the platform team.</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -227,8 +250,12 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Before the gateway enclosures were built it was determined that the Multitech Conduit would actually be situated inside so students could access it if required.  This changed the requirements for the gateway enclosures as we only needed 2 which were nearly the same.  We may need a wall mounting plate for the Conduit at a later date.
+
+				I had to figure out how the gateway cooling was going to work, for this I borrowed a lab power supply and tested how the Peltier unit (For more information on how these work: http://www.marlow.com/resources/general-faq/6-how-do-thermoelectric-coolers-tecs-work.html) responded to 5v power and limiting the current.  I believe this should be sufficient but it can be changed at a later date.  I am currently looking for a source for silica packets so that there will be little to no moisture that can condensate on the electronics.
+
+				I also requested that a hole be added to the gateway enclosures so we can add temperature monitoring to the gateways.</td>
+			<td>The gateway still cannot connect to the AWS server, it is suspected that port 1700 is being blocked on the Otago Polytechnic network.</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -252,8 +279,11 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>We received our first enclosure for the Haxiot m-card and raspberry-pi, I am currently looking for a power solution that will be able to power the m-card, raspberry pi and the Peltier.
+				Worked with Brendan to try get the Conduit gateway to talk to the AWS server.  
+				Found that port 1700 was being blocked on the Otago Polytechnic network,  this was then unblocked the next week and the devices were able to connect to the AWS server.</td>
+			<td>No luck connecting the Conduit to the AWS server, we changed the gateway config file and exhausted debugging options available. 
+				We are suspecting a port is being blocked, most likely port 1700.  This was later confirmed by Rob.</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -277,8 +307,11 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Met with Linus Turner (DGT Lecturer) from Kavanagh college and discussed deploying a gateway at the school.  As well as looking at getting students involved with making nodes etc.  They are really interested and would like me to send them an email containing requirements, brief description and any other useful information.
+
+				As of Wednesday I am getting Tom to proof read the second iteration of the development to production form to be sent to Steven Turnbull as soon as possible.</td>
+			<td>Started to look at power solutions for the conduit
+				http://www.multitech.net/developer/products/multiconnect-conduit-platform/conduit/mtcdt-power-draw/</td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -302,8 +335,10 @@ title: TimeLine
 		    </thead>
 		    <tbody>
 		      <tr>
-			<td>Dooley</td>
-			<td>july@example.com</td>
+			<td>Install date for the Multitech Conduit given, the installers have started making the cable
+				Took a trip with Rob Broadley to Jay Car to look for cable glands and possible power solutions for the two outdoor gateways.
+				Uploading more documentation to Github and started working on documentation for submission to Tom.</td>
+			<td>The installers had to come back a few times to remake the cable as it had the wrong connectors on it a few times.</td>
 		      </tr>
 		    </tbody>
 		  </table>
